@@ -1,4 +1,4 @@
-# fop (folder-of-path)
+# fop (folder-of-path) [![Build Status](https://travis-ci.org/Urucas/fop.svg)](https://travis-ci.org/Urucas/fop)
 Simply giving you the folder of a file path 
 
 #Install
