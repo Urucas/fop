@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+var argv = require('optimist')
+  .usage()
+  .options('path', {
+    describe: 'File path'
+  })
+  .argv
+
+if(argv.help) {
+  console.log([
+    'fop (folder of path)',
+    'Usage: fop --path [path_to_file]'
+  ].join('\n'))
+  return;
+}
+
+var fop = require('../node');
+var folder = fop(argv.path || "");
+console.log(folder);
