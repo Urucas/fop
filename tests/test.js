@@ -32,4 +32,17 @@ describe("Fop instance test", () => {
     done();
   });
 
+  it("Test path -> ./", (done) => {
+    let folder = fop("./");
+    if(folder != "./") throw new Error("Test fails, return folder:"+folder);
+    done();
+  });
+
+  it("Test path -> ./Users/vruno/", (done) => {
+    let folder = fop("./Users/vruno/");
+    if(folder != "./Users/vruno/") throw new Error("Test fails, return folder:"+folder);
+    done();
+  });
+
+
 });
